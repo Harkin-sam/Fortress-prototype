@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto-Fortress website Sample</title>
+
+    <link rel ="stylesheet" href = "CryptoFortress.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" /> -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"/>
+
+    <script src="https://kit.fontawesome.com/e470050ad5.js" crossorigin="anonymous"></script>
+    
+    <script  src = "CryptoFortress.js" defer ></script>
+</head>
+<body>
+
+    <div class="loadingio-spinner-eclipse-n73x90pvyp">
+        <div class="ldio-nf5yrxuwhzr">
+            <div></div>
+        </div>
+    </div>
+    
+
+<div class = "body-container">
+    <svg class="hamburger-menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="#107C10"/>
+    </svg>
+
+
+    <header class ="header" id="home">
+        <div class = "img-container">
+            <img src = "pexels-cottonbro-3201586.jpg"> 
+        </div>
+
+        <div class ="landscape">
+           <span class="menu-landscape">
+               <a href="#home" id="reduce" class="menu-links" data-content ="Home">Home</a>
+            </span>
+
+            <span class="menu-landscape">
+                <a href="#about-us" id="reduce" class="menu-links" data-content ="About Us">About Us</a>
+            </span>
+
+            <span class="menu-landscape">
+                <a href="#team" id="reduce" class ="menu-links" data-content ="Team">Team</a>
+            </span>
+                
+            <span class="menu-landscape">
+                <a href="#contact-us" id="reduce" class ="menu-links" data-content ="Contact Us">Contact Us</a>
+            </span>
+        </div>
+
+        <div class = "banner">
+            <h1>Crypto<br> & <br>Trading Logistics</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <button>Discover now</button>
+        </div>
+    </header>
+
+    <section class="sidebar">
+        <img  class ="close" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAAC40lEQVRoge2au24TQRSGP8CEglRYRLFiFyAgvAG08AAoUSQQVBSIIAVDAQhKHgAIPAMUVijSWaKiJIASKJG4tYgoRRJHAoFsivEie7Xr3Tl7Znaj7C/9lXf2zJezmTlzgVKlSpUqVVztc/z+SeA8cAY4DRwHqsB4//cOsAF8Az4BK8Br4IfjfqmqCtwC3gM9od8Bzf67Cqs68BTYQQ4adgdYBKY8ciTqIHAb2EYPNOwd4CFwyBNTrKaBj7gDDfsDcMoLWYTmcJvVOG8Bsx74hnQV+JOx41n8F7jhnLKveQ9Aad10zMoc5q+bN+hgpmdcwZ4ANgsAGfY2pqhR1Rh+R2Nbr2GmRzU9KABUku9qwU5hKp68gdJ82rUkmP0pgO8Bh1M8l7fGUchyFfvauI2pq+vAsmXbXr9N0L5t2bZDxgVHU9Dh+kD7CtCyaNvqtwlUF8S/mQVYssSrh96RFjoMC9AQxH8rha0BXUHA5YiOJ0FHwVaQ/Ut0gQkJ8BVBsMAvIwAOAM8jnl2KefZFhviXJMDPMgQclbWW5TMSL0qAX2UMmpRpF5kN3JYAf1UIPCqLLjIb+LMEeEMpeFymB6WV2cDrEuDfih0YBa0N2wN+xUGlKS211BP+5k2an3TUADWouCnL6yf9RSn4rhm0NKalUVOPTXFia9G0tOcKj8sZAtoUFS4yfVECPMkeWzyAOcWzDai5PJSsh99IYSH/DQDJenghC3AV+w28YIunQbYtngY5bPGAGfFsO52XH2WFhd2zTbuFGWhVdL8AQEm+owUL5hhjrQBQcV5F+agFin2YNq0NG2iW4h2XXnAFG+h6AUB7mIrqmmPW/yrClYd555QhzWCmAt+wm3j4jON0Er+j9ypm8MxVFczFNJfZDi6mjXliSqUa8ATdqqwDPEaxgnKhKubIcgXZerqLWeItAEe0O+f6+vAEcA44i7lpcww4yvD14XXgO8PXh3867lepUqVKlSqk/gF+GPb/q1X2BwAAAABJRU5ErkJggg=="/>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="#home" class="menu-links" data-content ="HOME">HOME</a>
+            </li>
+
+            <li class="menu-item">
+                <a href="#about-us" class="menu-links" data-content ="ABOUT US">ABOUT US</a>
+            </li>
+
+            <li class="menu-item">
+                <a href="#team" class ="menu-links" data-content ="TEAM">TEAM</a>
+            </li>
+
+            <!-- <li class="menu-item">
+                <a href="#" class ="menu-links" data-content ="LOGIN">LOGIN</a>
+            </li> -->
+                
+            <li class="menu-item" id="adjust">
+                <a href="#contact-us" class ="menu-links" data-content ="CONTACT US" id="adjust">CONTACT US</a>
+            </li>
+        </ul>
+
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <section class = "first-section" id ="about-us">
+
+        <h1 class = "sub-heading">ABOUT US
+            <div class ="underline"></div>
+        </h1>
+        
+
+        <div class="info-cards">
+            <div class="info first">
+                
+                    <h2>OUR MISSION
+                        <div class ="underline-2"></div>
+                    </h2>
+                        
+                    
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio voluptatum veritatis cum saepe exercitationem cumque obcaecati rem, veniam error blanditiis, perferendis omnis dolorum libero voluptatibus, aut eveniet atque. Voluptate accusamus nobis eligendi, quisquam obcaecati deserunt quod maxime! Itaque, facilis mollitia.
+                    </p>
+                
+            </div>
+
+            <div class="info">
+                
+                    <h2>OUR VISSION
+                        <div class ="underline-2"></div>
+                    </h2>
+                    
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet dolorem, illo consectetur voluptatibus sint quod, repellendus architecto sequi ex in maiores. Rerum eum saepe tenetur necessitatibus ratione. Quidem velit nam a laborum. Sint impedit ab dolore commodi saepe voluptates.</p>
+                
+            </div>
+
+            <div class="info">
+                
+                <h2>OUR GOALS
+                    <div class ="underline-2"></div>
+                </h2>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quaerat dolor cum dignissimos, nemo obcaecati neque aliquam ipsam consequatur, doloribus magni possimus. Deserunt voluptates delectus, eum similique incidunt ex dolores quo sint unde, iste maiores obcaecati pariatur itaque dolore cumque!</p>
+                
+            </div>
+    </div>
+    </section>
+
+    <section class="team" id ="team">
+
+        <div class="section-header">
+            <h1 class="sub-heading">OUR TEAM
+                <div class="underline"></div>
+            </h1>
+        </div>
+
+        <div class="cards-wrapper" >
+            <div class="cards">
+                <div class="card-img-wrapper">
+                    <img src="photo_2022-01-26_13-32-58.jpg" alt="CEO">
+                </div>
+
+                <div class="card-infos" >
+                    <h2>kING ROM II</h2>
+                    <h3>CEO</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, fugiat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-img-wrapper">
+                    <img src="photo_2022-01-26_13-33-24.jpg" alt="DEV">
+                </div>
+
+                <div class="card-infos">
+                    <h2>HAYKINZ</h2>
+                    <h3>Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, fugiat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cards" data-tilt>
+                <div class="card-img-wrapper">
+                    <img src="photo_2022-01-26_13-33-02.jpg" alt="DESIGNER">
+                </div>
+
+                <div class="card-infos">
+                    <h2>HAYKINZ</h2>
+                    <h3>Designer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, fugiat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cards" data-tilt>
+                <div class="card-img-wrapper">
+                    <img src="photo_2022-01-26_13-32-48.jpg" alt="PROJECT MANAGER">
+                </div>
+
+                <div class="card-infos">
+                    <h2>HAYKINZ</h2>
+                    <h3>Project Manager</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, fugiat.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button>Read More</button>
+    </section>
+
+    <section class="contact" id="contact-us">
+
+        <span>Check out our social media</span>
+
+        <svg class="down-arrow" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
+        </svg>
+
+        <div class="contact-wrapper">
+            <div class="contact-header">
+                <h1 class="sub-heading">CONTACT US</h1>
+                <P>Do you have any enquiry or suggestion ?</P>
+            </div>
+
+            <div class="contact-form">
+                <form action="#">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class = "footer">
+        <div>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>    
+    </section>
+</div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src = "tilt.js"></script>
+</body>
+</html>
